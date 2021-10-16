@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      {count}
+      <p style={{ color: count % 2 == 0 ? "red" : "green" }}>{count}</p>
       <button onClick={() => handleClick()}>+1</button>
     </div>
   );
