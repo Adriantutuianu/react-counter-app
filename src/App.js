@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    console.log("Clicked");
+    setCount(count + 1);
   };
 
   return (
