@@ -14,7 +14,12 @@ function App() {
   return (
     <div style={{ textAlign: "center" }}>
       <p style={{ color: count % 2 === 0 ? "red" : "green" }}>{count}</p>
-      <button onClick={() => handleClickIncrement()}>+1</button>
+      <button
+        onClick={() => handleClickIncrement()}
+        style={{ marginRight: "10px" }}
+      >
+        +1
+      </button>
       <button onClick={() => handleClickDecrement()}>-1</button>
     </div>
   );
