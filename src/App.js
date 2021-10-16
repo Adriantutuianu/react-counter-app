@@ -1,5 +1,18 @@
+import React, { useState } from "react";
+
 function App() {
-  return <div className="App" style={{ textAlign: "center" }}></div>;
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    console.log("Clicked");
+  };
+
+  return (
+    <div style={{ textAlign: "center" }}>
+      {count}
+      <button onClick={() => handleClick()}>+1</button>
+    </div>
+  );
 }
 
 export default App;
